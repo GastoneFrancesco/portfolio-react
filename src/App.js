@@ -12,8 +12,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Navigate to="/homePage" />} />
-        <Route exact path="/homePage" element={<HomePageComponent />} />
+        <Route exact path="/" element={<Navigate to="/home-page" />} />
+        <Route exact path="/home-page" element={<HomePageComponent />} />
         <Route exact path="/work" element={<WorkComponent />} />
       </Routes>
     </Router>

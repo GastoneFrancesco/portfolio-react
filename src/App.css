@@ -2,37 +2,319 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .working-fra {
+    animation: fade_in 6s;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  .writer_text {
+    animation: typewriter_effect 5.2s;
+  }
+  .writer_text2, .writer_text_li {
+    animation: typewriter_effect 4s;
+  }
+  .ide_background_img, .email-container-right, .email-container-left{
+    animation: fade_in 3s;
+  }
+  .writer_text_div, .writer_text_ul{
+    animation: typewriter_effect 2s;
+  }
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+@keyframes fade_in {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
+}
+
+@keyframes typewriter_effect{
+  from {
+    width: 0%;
   }
   to {
-    transform: rotate(360deg);
+    width: 100%;
   }
+}
+
+#root {
+  height: 100vh;
+}
+
+body {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.working-fra {
+  transition: opacity 0.3s, visibility 0.3s;
+  max-width: 24vh;
+  filter: drop-shadow(4vh 0vh 2px #0066ffb7);
+}
+
+.ide_background_container {
+  position: absolute;
+  z-index: -10;
+  margin-top: 24vh;
+}
+
+.ide_background_img {
+  max-width: 100vh;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navMenu {
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: auto;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  padding-inline: 10px;
+}
+
+.navMenu a:hover {
+  color: #0066ff;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #0066ff;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateX(40px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover~.dot {
+  transform: translateX(40px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover~.dot {
+  transform: translateX(125px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover~.dot {
+  transform: translateX(230px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.writer_container {
+  width: max-content;
+  margin-left: 1vh;
+  margin-top: 6vh;
+}
+
+.writer_text{
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  font-size: 4vh;  
+  font-weight: normal;
+  padding-right: 1vh;
+  padding-left:8vh;
+  color: white;
+  border-right: 2px solid white;
+  width: max-content;
+  margin-bottom: -5vh;
+}
+
+.writer_text2{
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  font-size: 3vh;  
+  font-weight: normal;
+  padding-right: 1vh;
+  padding-left:8vh;
+  color: white;
+  width: max-content;
+  margin-bottom: -5vh;
+  border-right: 2px solid white;
+
+} 
+
+.writer_text_div{
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  font-size: 3.5vh;  
+  font-weight: normal;
+  padding-right: 10px;
+  color: white;
+  width: max-content;
+  margin-bottom: -5vh;
+  border-right: 2px solid white;
+  color: #0066ff;
+
+} 
+
+.writer_text_ul {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  font-size: 3vh;  
+  font-weight: normal;
+  padding-right: 1vh;
+  padding-left:8vh;
+  color: white;
+  width: max-content;
+  margin-bottom: -5vh;
+  border-right: 2px solid white;
+  color: #0066ff;
+}
+
+.writer_text_li {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  font-size: 3vh;  
+  font-weight: normal;
+  padding-right: 1vh;
+  padding-left:13vh;
+  color: white;
+  width: max-content;
+  margin-bottom: -5vh;
+  border-right: 2px solid white;
+}
+
+a {
+  color: white;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 6vh;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.email-container-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #0066ff6a;
+  color: white;
+  width: 100%;
+}
+
+.email-container-right {
+  background-color: #3e8bff6a;
+  color: white;
+  width: 100%;
+}
+
+.email-caption {
+  margin-bottom: 6vh;
+  margin-inline: 10vh;
+  font-size: 3vh;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 2vh;
+}
+
+.email-form input[type="text" i], input[type="email" i] {
+  font-size: 14px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 2px 10px;
+  display: block;
+  height: 36px;
+  margin: 1vh;
+  outline: none;
+  background: none;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+.email-form input[type="submit" i] {
+  font-size: 18px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 2px 10px;
+  display: block;
+  height: 36px;
+  margin: 1vh;
+  outline: none;
+  background-color: #0066ff;
+  border: none;
+  color: white;
+}
+
+.email-form input::placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.email-form input:hover{
+  border-color: #0066ff;
+}
+
+.email-form input:focus{
+  border-color: #0066ff;
+}
+
+.email-form input[type="submit" i]:hover{
+  background-color: #0046af;
+}
+
+.email-form textarea {
+  font-size: 14px;
+  border-radius: 6px;
+  line-height: 1.5;
+  padding: 5px 10px;
+  border: 3px solid #dee1e2;
+  display: block;
+  height: 12vh;
+  width: 60vh;
+  margin: 1vh;
+  outline: none;
+  background-color: none;
+}
+
+.email-form textarea::placeholder {
+  color: rgb(153, 153, 153);
+}
+
+.email-form textarea:hover{
+  border-color: #0066ff;
+}
+
+.email-form textarea:focus{
+  border-color: #0066ff;
 }

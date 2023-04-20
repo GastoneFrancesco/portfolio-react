@@ -1,6 +1,6 @@
 import React from "react";
-import ideBackground from './ide_background.png';
-import working from './working_fra.png'
+import ideBackground from '../resources/ide_background.png';
+import working from '../resources/working_fra.png'
 import { TopBarComponent } from './TopBarComponent.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 

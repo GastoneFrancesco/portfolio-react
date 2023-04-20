@@ -10,7 +10,7 @@ export const WorkComponent = () => {
     const [nome, setNome] = useState('');
     const [corpoMessaggio, setCorpoMessaggio] = useState('');
 
-    var data = require('../config.json')
+    var data = require('../resources/config.json')
 
     let serviceId = data.serviceId;
     let templateId = data.templateId;

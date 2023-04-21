@@ -3,4 +3,4 @@
 ##  Visit www.francescogastone.dev
 
 ### Developed with ReactJS
-### Deployed using www.netlifly.com
+### Deployed using www.netlify.com

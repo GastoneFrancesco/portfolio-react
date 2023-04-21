@@ -118,6 +118,62 @@ body {
   width: fit-content;
 }
 
+@media (max-width: 500px) {
+
+  .working-fra {
+    max-width: 12vh;
+    margin-bottom: -36vh;
+  }
+
+  .hire-me-button {
+    font-size: 0.8vh;
+    padding-block: 0.5vh;
+    padding-inline: 1.5vh;
+    margin-bottom: -36vh;
+  }
+
+  .ide_background_img {
+    width: 50vh;
+  }
+
+  .writer_container {
+    margin-top: 5.5vh !important;
+  }
+
+  .writer_container:first-of-type {
+    margin-top: 30.2vh !important;
+  }
+
+  .writer_text {
+    font-size: 1.8vh !important;
+    margin-left: -4.5vh !important;
+
+  }
+
+  .writer_text2 {
+    font-size: 1.6vh !important;
+    margin-left: -4.5vh !important;
+  }
+
+  .writer_text_div {
+    font-size: 1.8vh !important;
+    margin-top: -3.5vh !important;
+    margin-left: -1.6vh;
+  }
+
+  .writer_text_ul {
+    padding-left: 0 !important;
+    font-size: 1.4vh !important;
+    margin-left: 3.5vh !important;
+  }
+
+  .writer_text_li {
+    padding-left: 0 !important;
+    font-size: 1.4vh !important;
+    margin-left: 6vh !important;
+  }
+}
+
 .ide_background_img {
   max-width: 100vh;
 }

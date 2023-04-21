@@ -44,8 +44,8 @@ export const HomePageComponent = () => {
     const closedLi = '</li>';
 
     const hireMeButton = () => {
-        navigate('/work')
-    }
+    navigate('/work')
+  }
 
     return (
 

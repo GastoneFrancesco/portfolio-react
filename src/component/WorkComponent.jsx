@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import { TopBarComponent } from './TopBarComponent.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandshake, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
+import helloFra from '../resources/hello_fra.webp'
+
 
 export const WorkComponent = () => {
 
@@ -62,6 +64,10 @@ export const WorkComponent = () => {
             <TopBarComponent />
 
             <div style={divStyle}>
+
+                <div >
+                    <img src={helloFra} class="hello-fra" alt="hello_fra" />
+                </div>
 
                 <div class="email-container">
 

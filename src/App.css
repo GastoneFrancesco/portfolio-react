@@ -18,7 +18,8 @@
 
   .ide_background_img,
   .email-container-right,
-  .email-container-left {
+  .email-container-left,
+  .hello-fra {
     animation: fade_in 3s;
   }
 
@@ -94,6 +95,7 @@ body {
 .working-fra {
   transition: opacity 0.3s, visibility 0.3s;
   max-width: 24vh;
+  margin-top: -1vh;
 }
 
 .hire-me-button {
@@ -104,13 +106,13 @@ body {
   color: #1E3557;
   font-weight: bold;
   font-size: 1.6vh;
-  margin-top: 5vh;
+  margin-top: 4vh;
 }
 
 .ide_background_container {
   position: absolute;
   z-index: -10;
-  margin-top: 24vh;
+  margin-top: 23vh;
   width: fit-content;
 }
 
@@ -118,17 +120,18 @@ body {
 
   .working-fra {
     max-width: 12vh;
-    margin-bottom: -36vh;
+    margin-top: -1vh;
   }
 
   .hire-me-button {
     font-size: 0.8vh;
     padding-block: 0.2vh;
     padding-inline: 1.5vh;
-    margin-bottom: -36vh;
+    margin-bottom: 1.2vh;
   }
 
   .ide_background_img {
+    margin-top: -12vh !important;
     width: 50vh;
   }
 
@@ -137,7 +140,7 @@ body {
   }
 
   .writer_container:first-of-type {
-    margin-top: 30.2vh !important;
+    margin-top: 6.7vh !important;
   }
 
   .writer_text {
@@ -224,6 +227,10 @@ body {
     margin-left: -0.7vh;
   }
 
+  .hello-fra {
+    max-width: 10vh !important;
+    margin-left: -24vh !important;
+  }
 }
 
 .ide_background_img {
@@ -519,4 +526,10 @@ input[type="email" i] {
   font-weight: bold;
   font-size: 1.6vh;
   animation: bounce 2s 1;
+}
+
+.hello-fra {
+  max-width: 18vh;
+  margin-bottom: -6vh;
+  margin-left: -73vh;
 }

@@ -88,14 +88,6 @@ export const HomePageComponent = () => {
                     <div class="writer_container">
                         <p class="writer_text_li">
                             <span style={spanColor}>{openLi}</span>
-                            <a href="https://www.instagram.com/_francescogastone_/">Instagram</a>
-                            <span style={spanColor}>{closedLi}</span>
-                            <FontAwesomeIcon icon="fa-brands fa-instagram" size="lg" style={{ marginLeft: '2vh' }} />
-                        </p>
-                    </div>
-                    <div class="writer_container">
-                        <p class="writer_text_li">
-                            <span style={spanColor}>{openLi}</span>
                             <a href="https://www.linkedin.com/in/francesco-gastone-50663a20b/">Linkedin</a>
                             <span style={spanColor}>{closedLi}</span>
                             <FontAwesomeIcon icon="fa-brands fa-linkedin" size="lg" style={{ marginLeft: '2vh' }} />
@@ -107,6 +99,14 @@ export const HomePageComponent = () => {
                             <a href="https://github.com/GastoneFrancesco">GitHub</a>
                             <span style={spanColor}>{closedLi}</span>
                             <FontAwesomeIcon icon="fa-brands fa-github" size="lg" style={{ marginLeft: '2vh' }} />
+                        </p>
+                    </div>
+                    <div class="writer_container">
+                        <p class="writer_text_li">
+                            <span style={spanColor}>{openLi}</span>
+                            <a href="https://www.instagram.com/_francescogastone_/">Instagram</a>
+                            <span style={spanColor}>{closedLi}</span>
+                            <FontAwesomeIcon icon="fa-brands fa-instagram" size="lg" style={{ marginLeft: '2vh' }} />
                         </p>
                     </div>
                     <div class="writer_container">

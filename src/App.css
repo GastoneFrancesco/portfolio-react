@@ -6,17 +6,29 @@
   .working-fra {
     animation: fade_in 6s;
   }
+
   .writer_text {
     animation: typewriter_effect 5.2s;
   }
-  .writer_text2, .writer_text_li {
+
+  .writer_text2,
+  .writer_text_li {
     animation: typewriter_effect 4s;
   }
-  .ide_background_img, .email-container-right, .email-container-left{
+
+  .ide_background_img,
+  .email-container-right,
+  .email-container-left {
     animation: fade_in 3s;
   }
-  .writer_text_div, .writer_text_ul{
+
+  .writer_text_div,
+  .writer_text_ul {
     animation: typewriter_effect 2s;
+  }
+
+  .hire-me-button {
+    animation: bounce 2s infinite;
   }
 }
 
@@ -34,34 +46,76 @@
   }
 }
 
-@keyframes typewriter_effect{
+@keyframes typewriter_effect {
   from {
     width: 0%;
   }
+
   to {
     width: 100%;
   }
 }
 
+@keyframes bounce {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
 #root {
   height: 100vh;
+  width: 100vh;
+  margin: auto;
 }
 
 body {
-  background: #272727;
+  background: rgb(39, 39, 39);
+  background: linear-gradient(140deg, rgba(39, 39, 39, 1) 9%, rgba(22, 66, 132, 1) 71%, #003d99 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
+}
+
+.working-fra-container {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
 }
 
 .working-fra {
   transition: opacity 0.3s, visibility 0.3s;
   max-width: 24vh;
-  filter: drop-shadow(4vh 0vh 2px #0066ffb7);
+}
+
+.hire-me-button {
+  background-color: rgb(46, 222, 160);
+  padding-block: 1vh;
+  padding-inline: 3vh;
+  border-radius: 20px;
+  color: #1E3557;
+  font-weight: bold;
+  font-size: 2vh;
+  margin-top: 5vh;
 }
 
 .ide_background_container {
   position: absolute;
   z-index: -10;
   margin-top: 24vh;
+  width: fit-content;
 }
 
 .ide_background_img {
@@ -83,7 +137,8 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  white-space: nowrap; /* keep text in one line */
+  white-space: nowrap;
+  /* keep text in one line */
 }
 
 .navMenu a {
@@ -100,13 +155,13 @@ body {
 }
 
 .navMenu a:hover {
-  color: #0066ff;
+  color: rgb(46, 222, 160);
 }
 
 .navMenu .dot {
   width: 6px;
   height: 6px;
-  background: #0066ff;
+  background: rgb(46, 222, 160);
   border-radius: 50%;
   opacity: 0;
   transform: translateX(40px);
@@ -138,72 +193,77 @@ body {
   margin-top: 6vh;
 }
 
-.writer_text{
-  white-space: nowrap; /* keep text in one line */
-  overflow: hidden; /* hide text behind the cursor */
-  font-size: 4vh;  
+.writer_text {
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  font-size: 4vh;
   font-weight: normal;
   padding-right: 1vh;
-  padding-left:8vh;
+  padding-left: 8vh;
   color: white;
-  border-right: 2px solid white;
   width: max-content;
   margin-bottom: -5vh;
 }
 
-.writer_text2{
-  white-space: nowrap; /* keep text in one line */
-  overflow: hidden; /* hide text behind the cursor */
-  font-size: 3vh;  
+.writer_text2 {
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  font-size: 3vh;
   font-weight: normal;
   padding-right: 1vh;
-  padding-left:8vh;
+  padding-left: 8vh;
   color: white;
   width: max-content;
   margin-bottom: -5vh;
-  border-right: 2px solid white;
+}
 
-} 
-
-.writer_text_div{
-  white-space: nowrap; /* keep text in one line */
-  overflow: hidden; /* hide text behind the cursor */
-  font-size: 3.5vh;  
+.writer_text_div {
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  font-size: 3.5vh;
   font-weight: normal;
   padding-right: 10px;
   color: white;
   width: max-content;
   margin-bottom: -5vh;
-  border-right: 2px solid white;
-  color: #0066ff;
+  color: rgb(46, 222, 160);
+  margin-top: -1vh;
 
-} 
+}
 
 .writer_text_ul {
-  white-space: nowrap; /* keep text in one line */
-  overflow: hidden; /* hide text behind the cursor */
-  font-size: 3vh;  
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  font-size: 3vh;
   font-weight: normal;
   padding-right: 1vh;
-  padding-left:8vh;
+  padding-left: 8vh;
   color: white;
   width: max-content;
   margin-bottom: -5vh;
-  border-right: 2px solid white;
-  color: #0066ff;
+  color: rgb(46, 222, 160);
 }
 
 .writer_text_li {
-  white-space: nowrap; /* keep text in one line */
-  overflow: hidden; /* hide text behind the cursor */
-  font-size: 3vh;  
+  white-space: nowrap;
+  /* keep text in one line */
+  overflow: hidden;
+  /* hide text behind the cursor */
+  font-size: 3vh;
   font-weight: normal;
   padding-right: 1vh;
-  padding-left:13vh;
+  padding-left: 13vh;
   color: white;
   width: max-content;
   margin-bottom: -5vh;
-  border-right: 2px solid white;
 }
 
 a {
@@ -249,7 +309,8 @@ a {
   margin-top: 2vh;
 }
 
-.email-form input[type="text" i], input[type="email" i] {
+.email-form input[type="text" i],
+input[type="email" i] {
   font-size: 14px;
   border-radius: 6px;
   line-height: 1.5;
@@ -282,15 +343,15 @@ a {
   color: rgb(153, 153, 153);
 }
 
-.email-form input:hover{
+.email-form input:hover {
   border-color: #0066ff;
 }
 
-.email-form input:focus{
+.email-form input:focus {
   border-color: #0066ff;
 }
 
-.email-form input[type="submit" i]:hover{
+.email-form input[type="submit" i]:hover {
   background-color: #0046af;
 }
 
@@ -312,10 +373,10 @@ a {
   color: rgb(153, 153, 153);
 }
 
-.email-form textarea:hover{
+.email-form textarea:hover {
   border-color: #0066ff;
 }
 
-.email-form textarea:focus{
+.email-form textarea:focus {
   border-color: #0066ff;
 }

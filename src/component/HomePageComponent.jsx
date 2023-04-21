@@ -3,8 +3,12 @@ import ideBackground from '../resources/ide_background.png';
 import working from '../resources/working_fra.png'
 import { TopBarComponent } from './TopBarComponent.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFlag } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from "react-router-dom";
 
 export const HomePageComponent = () => {
+
+    let navigate = useNavigate()
 
     const divStyle = {
         display: 'flex',
@@ -13,12 +17,18 @@ export const HomePageComponent = () => {
         marginTop: '10vh'
     };
 
+    const divStyle2 = {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center'
+    };
+
     const spanColor = {
-        color: '#0066ff',
+        color: 'rgb(46, 222, 160)',
     }
 
     const firstMessage = ' Hey there! My name is Francesco ';
-    const secondMessage = ' I am a FullStack Developer ';
+    const secondMessage = ' I am a FullStack Web Developer ';
 
     const openP = '<p>'
     const closedP = '</p>'
@@ -33,6 +43,10 @@ export const HomePageComponent = () => {
     const openLi = '<li>';
     const closedLi = '</li>';
 
+    const hireMeButton = () => {
+        navigate('/work')
+    }
+
     return (
 
         <>
@@ -40,8 +54,10 @@ export const HomePageComponent = () => {
 
             <div style={divStyle}>
 
-                <div>
+                <div style={divStyle2}>
                     <img src={working} class="working-fra" alt="working_fra" />
+                    <button class="hire-me-button" onClick={hireMeButton}>
+                        <FontAwesomeIcon icon={faFlag} size="2xl" style={{ color: "#1E3557", paddingRight: '1vh' }} />Hire me</button>
                 </div>
 
                 <div className='ide_background_container'>

@@ -479,6 +479,7 @@ input[type="email" i] {
   outline: none;
   resize: none;
   background: none;
+  color: white;
   border: 1px solid white;
 }
 

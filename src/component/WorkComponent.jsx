@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { TopBarComponent } from './TopBarComponent.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelopeOpenText } from '@fortawesome/free-solid-svg-icons';
+import { faHandshake, faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 
 export const WorkComponent = () => {
 
@@ -28,11 +28,14 @@ export const WorkComponent = () => {
         }
 
         const button = document.getElementById('confirm-button');
+        const buttonDiv = document.getElementById('send-email-div');
         button.value = "Sending..."
+        buttonDiv.className = 'sending-email-button';
 
         emailjs.sendForm(serviceId, templateId, form.current, publicKey)
             .then((result) => {
                 button.value = "Send"
+                buttonDiv.className = 'send-mail-button';
                 const inputs = document.querySelectorAll('#from_name, #from_email, #message');
                 inputs.forEach(input => {
                     input.value = '';
@@ -57,14 +60,15 @@ export const WorkComponent = () => {
 
         <>
             <TopBarComponent />
+
             <div style={divStyle}>
 
                 <div class="email-container">
 
                     <div class="email-container-left">
-                        <FontAwesomeIcon icon={faEnvelopeOpenText} size="8x" style={{ margin: '4vh' }} />
+                        <FontAwesomeIcon icon={faHandshake} />
 
-                        <p class="email-caption">If you have a question or just want to get in touch, use the form. We look forward to hearing from you!</p>
+                        <p class="email-caption">If you have a question or you want to request for quotation use the form. I'll be happy to answer!</p>
 
                     </div>
 
@@ -72,16 +76,21 @@ export const WorkComponent = () => {
 
                         <form class='email-form' ref={form} onSubmit={sendEmail}>
 
-                            <input type="text" value={nome} onChange={(e) => setNome(e.target.value)}
-                                placeholder='Name Surname' name="from_name" id="from_name" />
+                            <div class="name-email-div">
+                                <input type="text" value={nome} onChange={(e) => setNome(e.target.value)}
+                                    placeholder='Name Surname' name="from_name" id="from_name" />
 
-                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
-                                placeholder='Your email' name="from_email" id="from_email" />
+                                <input type="email" value={email} onChange={(e) => setEmail(e.target.value)}
+                                    placeholder='Your email' name="from_email" id="from_email" />
+                            </div>
 
                             <textarea value={corpoMessaggio} onChange={(e) => setCorpoMessaggio(e.target.value)}
                                 placeholder="Write here your message" name="message" id="message" />
 
-                            <input type="submit" id='confirm-button' value="Send" />
+                            <div class="send-mail-button" id='send-email-div'>
+                                <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{ color: "#1E3557", paddingRight: '1vh' }} />
+                                <input type="submit" id='confirm-button' value="Send" ></input>
+                            </div>
 
                         </form>
 

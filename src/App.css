@@ -26,10 +26,6 @@
   .writer_text_ul {
     animation: typewriter_effect 2s;
   }
-
-  .hire-me-button {
-    animation: bounce 2s infinite;
-  }
 }
 
 .App-link {
@@ -102,12 +98,12 @@ body {
 
 .hire-me-button {
   background-color: rgb(46, 222, 160);
-  padding-block: 1vh;
-  padding-inline: 3vh;
+  padding-block: 0.5vh;
+  padding-inline: 2.5vh;
   border-radius: 20px;
   color: #1E3557;
   font-weight: bold;
-  font-size: 2vh;
+  font-size: 1.6vh;
   margin-top: 5vh;
 }
 
@@ -127,7 +123,7 @@ body {
 
   .hire-me-button {
     font-size: 0.8vh;
-    padding-block: 0.5vh;
+    padding-block: 0.2vh;
     padding-inline: 1.5vh;
     margin-bottom: -36vh;
   }
@@ -172,6 +168,62 @@ body {
     font-size: 1.4vh !important;
     margin-left: 6vh !important;
   }
+
+  .email-caption {
+    margin-block: 0.5vh !important;
+    margin-inline: 3vh !important;
+    font-size: 1.5vh !important;
+  }
+
+  .email-container-left {
+    width: 18vh !important;
+    height: 20vh !important;
+    font-size: 3vh !important;
+  }
+
+  .email-container-right {
+    width: 30vh !important;
+    height: 20vh !important;
+  }
+
+  .email-form textarea {
+    font-size: 1.3vh !important;
+    border-radius: 6px;
+    padding: 0.3vh 0.6vh !important;
+    height: 8vh !important;
+    width: 25.3vh !important;
+    margin: 2vh !important;
+  }
+
+  .send-mail-button {
+    padding-block: 0.3vh !important;
+    padding-inline: 0.6vh !important;
+    border-radius: 20px !important;
+    font-size: 0.6vh !important;
+  }
+
+  .sending-email-button {
+    padding-block: 0.3vh !important;
+    padding-inline: 0.6vh !important;
+    border-radius: 20px !important;
+    font-size: 0.6vh !important;
+    animation: bounce 2s 1;
+  }
+
+  .email-form input[type="text" i],
+  input[type="email" i] {
+    font-size: 0.96vh !important;
+    line-height: 1.5 !important;
+    padding: 0.3vh 0.6vh !important;
+    height: 2vh !important;
+    margin: 0.3vh !important;
+  }
+
+  .email-form input[type="submit" i] {
+    font-size: 0.8vh !important;
+    margin-left: -0.7vh;
+  }
+
 }
 
 .ide_background_img {
@@ -194,6 +246,7 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   white-space: nowrap;
+  margin-top: 2vh;
   /* keep text in one line */
 }
 
@@ -328,11 +381,9 @@ a {
 
 .email-container {
   display: flex;
-  flex-direction: column;
-  margin-inline: 6vh;
-  height: fit-content;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  margin-inline: 10vh;
+  margin-top: 5vh;
 }
 
 .email-container-left {
@@ -340,21 +391,35 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #0066ff6a;
+  background-color: #1E1E1E;
   color: white;
-  width: 100%;
+  width: 55vh;
+  height: 62vh;
+  border-radius: 10px;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 14vh;
+  border-right: 1.3px solid rgb(46, 222, 160);
 }
 
 .email-container-right {
-  background-color: #3e8bff6a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1E1E1E;
   color: white;
-  width: 100%;
+  width: 90vh;
+  height: 62vh;
+  justify-content: center;
+  border-radius: 10px;
+  border-left: 1.3px solid rgb(46, 222, 160);
 }
 
 .email-caption {
   margin-bottom: 6vh;
   margin-inline: 10vh;
-  font-size: 3vh;
+  font-size: 3.5vh;
 }
 
 .email-form {
@@ -367,12 +432,11 @@ a {
 
 .email-form input[type="text" i],
 input[type="email" i] {
-  font-size: 14px;
-  border-radius: 6px;
+  font-size: 2.7vh;
   line-height: 1.5;
-  padding: 2px 10px;
+  padding: 1vh 2vh;
   display: block;
-  height: 36px;
+  height: 6vh;
   margin: 1vh;
   outline: none;
   background: none;
@@ -382,17 +446,11 @@ input[type="email" i] {
 }
 
 .email-form input[type="submit" i] {
-  font-size: 18px;
-  border-radius: 6px;
-  line-height: 1.5;
-  padding: 2px 10px;
-  display: block;
-  height: 36px;
-  margin: 1vh;
-  outline: none;
-  background-color: #0066ff;
+  background-color: rgb(46, 222, 160);
+  color: #1E3557;
+  font-weight: bold;
+  font-size: 1.6vh;
   border: none;
-  color: white;
 }
 
 .email-form input::placeholder {
@@ -400,39 +458,63 @@ input[type="email" i] {
 }
 
 .email-form input:hover {
-  border-color: #0066ff;
+  border-color: rgb(46, 222, 160);
 }
 
 .email-form input:focus {
-  border-color: #0066ff;
+  border-color: rgb(46, 222, 160);
 }
 
-.email-form input[type="submit" i]:hover {
-  background-color: #0046af;
+.email-form input:not(:placeholder-shown) {
+  border-color: rgb(46, 222, 160);
 }
 
 .email-form textarea {
-  font-size: 14px;
+  font-size: 2.7vh;
   border-radius: 6px;
-  line-height: 1.5;
-  padding: 5px 10px;
-  border: 3px solid #dee1e2;
-  display: block;
-  height: 12vh;
-  width: 60vh;
-  margin: 1vh;
+  padding: 1vh 2vh;
+  height: 30vh;
+  width: 76vh;
+  margin: 6vh;
   outline: none;
-  background-color: none;
-}
-
-.email-form textarea::placeholder {
-  color: rgb(153, 153, 153);
+  resize: none;
+  background-color: rgba(255, 255, 255, 0.692);
 }
 
 .email-form textarea:hover {
-  border-color: #0066ff;
+  border: 3px solid rgb(46, 222, 160);
 }
 
 .email-form textarea:focus {
-  border-color: #0066ff;
+  border: 3px solid rgb(46, 222, 160);
+}
+
+.email-form textarea:not(:placeholder-shown) {
+  border: 3px solid rgb(46, 222, 160);
+}
+
+.name-email-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.send-mail-button {
+  background-color: rgb(46, 222, 160);
+  padding-block: 0.5vh;
+  padding-inline: 2.5vh;
+  border-radius: 20px;
+  color: #1E3557;
+  font-weight: bold;
+  font-size: 1.6vh;
+}
+
+.sending-email-button {
+  background-color: rgb(46, 222, 160);
+  padding-block: 0.5vh;
+  padding-inline: 2.5vh;
+  border-radius: 20px;
+  color: #1E3557;
+  font-weight: bold;
+  font-size: 1.6vh;
+  animation: bounce 2s 1;
 }

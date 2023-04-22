@@ -174,6 +174,10 @@ body {
     margin-left: 6vh !important;
   }
 
+  .email-container {
+    flex-direction: column !important;
+  }
+
   .email-caption {
     margin-block: 0.5vh !important;
     margin-inline: 3vh !important;
@@ -181,14 +185,18 @@ body {
   }
 
   .email-container-left {
-    width: 18vh !important;
+    width: 40vh !important;
     height: 20vh !important;
-    font-size: 3vh !important;
+    font-size: 4vh !important;
+    border: none !important;
+    border-bottom: 1px solid rgb(46, 222, 160) !important;
   }
 
   .email-container-right {
-    width: 30vh !important;
+    width: 40vh !important;
     height: 20vh !important;
+    border: none !important;
+    border-top: 1px solid rgb(46, 222, 160) !important;
   }
 
   .email-form textarea {
@@ -231,7 +239,7 @@ body {
 
   .hello-fra {
     max-width: 10vh !important;
-    margin-left: -24vh !important;
+    margin-left: -20vh !important;
   }
 }
 
@@ -276,7 +284,9 @@ body {
   color: rgb(46, 222, 160);
 }
 
-.selected-home-page, .selected-work, .selected-about-me {
+.selected-home-page,
+.selected-work,
+.selected-about-me {
   color: rgb(46, 222, 160) !important;
 }
 
@@ -540,7 +550,7 @@ input[type="email" i] {
   margin-left: -73vh;
 }
 
-.about-me-container {  
+.about-me-container {
   margin: auto;
   margin-block: 12vh;
   max-width: 100vh;

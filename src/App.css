@@ -19,7 +19,8 @@
   .ide_background_img,
   .email-container-right,
   .email-container-left,
-  .hello-fra {
+  .hello-fra,
+  .about-me-container {
     animation: fade_in 3s;
   }
 
@@ -107,6 +108,7 @@ body {
   font-weight: bold;
   font-size: 1.6vh;
   margin-top: 4vh;
+  border: none;
 }
 
 .ide_background_container {
@@ -272,6 +274,10 @@ body {
 
 .navMenu a:hover {
   color: rgb(46, 222, 160);
+}
+
+.selected-home-page, .selected-work, .selected-about-me {
+  color: rgb(46, 222, 160) !important;
 }
 
 .navMenu .dot {
@@ -532,4 +538,32 @@ input[type="email" i] {
   max-width: 18vh;
   margin-bottom: -6vh;
   margin-left: -73vh;
+}
+
+.about-me-container {  
+  margin: auto;
+  margin-block: 12vh;
+  max-width: 100vh;
+  align-items: center;
+  text-align: center;
+  background-color: #1E1E1E;
+  color: white;
+  justify-content: center;
+  border-radius: 10px;
+  padding-block: 4vh;
+  padding-inline: 6vh;
+}
+
+.about-me-p {
+  line-height: 1.8;
+  padding-block: 2vh;
+}
+
+.about-me-p:last-of-type {
+  padding-bottom: none;
+}
+
+/* Need this so the size doesn't change in smartphones view */
+#about-me-hire-me {
+  font-size: 1.6vh;
 }

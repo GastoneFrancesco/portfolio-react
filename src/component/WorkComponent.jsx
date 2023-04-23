@@ -11,6 +11,7 @@ export const WorkComponent = () => {
     const [email, setEmail] = useState('');
     const [nome, setNome] = useState('');
     const [corpoMessaggio, setCorpoMessaggio] = useState('');
+    const [isChecked, setIsChecked] = useState(false);
 
     var data = require('../resources/config.json')
 
@@ -20,12 +21,21 @@ export const WorkComponent = () => {
 
     const form = useRef();
 
+    const handleCheckboxChange = () => {
+        setIsChecked(!isChecked);
+    }
+
     const sendEmail = (e) => {
 
         e.preventDefault();
 
         if (email.trim().length === 0 || nome.trim().length === 0 || corpoMessaggio.trim().length === 0) {
             alert('Inserisci i dati prima di inviare la mail')
+            return
+        }
+
+        if (!isChecked) {
+            alert('You have to accept the Privacy Policy before sending an email')
             return
         }
 
@@ -42,6 +52,8 @@ export const WorkComponent = () => {
                 inputs.forEach(input => {
                     input.value = '';
                 });
+
+                setIsChecked(false);
 
                 alert('Email inviata con successo!')
                 console.log(result.text);
@@ -93,6 +105,14 @@ export const WorkComponent = () => {
                             <textarea value={corpoMessaggio} onChange={(e) => setCorpoMessaggio(e.target.value)}
                                 placeholder="Write here your message" name="message" id="message" />
 
+                            <div className='privacy-policy-checkbox'>
+                                <label>
+                                    <input type="checkbox" checked={isChecked} onChange={handleCheckboxChange}
+                                    />
+                                    I have read and understood the <a href='/privacy-policy' > Privacy Policy</a>
+                                </label>
+                            </div>
+
                             <div class="send-mail-button" id='send-email-div'>
                                 <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{ color: "#1E3557", paddingRight: '1vh' }} />
                                 <input type="submit" id='confirm-button' value="Send" ></input>
@@ -102,7 +122,7 @@ export const WorkComponent = () => {
 
                     </div>
                 </div>
-            </div>
+            </div >
 
 
         </>

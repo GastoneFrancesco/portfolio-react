@@ -11,6 +11,7 @@ export const TopBarComponent = () => {
                 <a class={actualPage === 'home-page' ? 'selected-home-page' : ''} href="/home-page">Home</a>
                 <a class={actualPage === 'work' ? 'selected-work' : ''} href="/work">Work</a>
                 <a class={actualPage === 'about-me' ? 'selected-about-me' : ''} href="/about-me">About Me</a>
+                <a class={actualPage === 'resume' ? 'selected-resume' : ''} href="/resume">Resume</a>
                 <div class="dot"></div>
             </nav>
         </>

@@ -257,7 +257,8 @@ body {
 
   .resume-container div h1{
     font-size: 1.6vh !important;
-    margin-bottom: 1.5vh !important;
+    margin-bottom: 1vh !important;
+    
   }
   
   .resume-container div p {
@@ -730,6 +731,7 @@ input[type="email" i] {
   white-space: nowrap;
   /* keep text in one line */
   margin-bottom: 3vh;
+  width: fit-content;
 }
 
 .resume-container div p {
@@ -745,4 +747,5 @@ input[type="email" i] {
 .fa-resume{
   font-size: 3vh;
   margin-right: 2vh;
+  color: rgb(46, 222, 160);
 }

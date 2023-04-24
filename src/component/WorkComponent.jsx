@@ -30,7 +30,7 @@ export const WorkComponent = () => {
         e.preventDefault();
 
         if (email.trim().length === 0 || nome.trim().length === 0 || corpoMessaggio.trim().length === 0) {
-            alert('Inserisci i dati prima di inviare la mail')
+            alert('Fill the form before sending the email')
             return
         }
 
@@ -55,7 +55,7 @@ export const WorkComponent = () => {
 
                 setIsChecked(false);
 
-                alert('Email inviata con successo!')
+                alert('Email sent!')
                 console.log(result.text);
 
             }, (error) => {
@@ -63,19 +63,12 @@ export const WorkComponent = () => {
             });
     };
 
-    const divStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        marginTop: '10vh'
-    };
-
     return (
 
         <>
             <TopBarComponent />
 
-            <div style={divStyle}>
+            <div className='main-div-container'>
 
                 <div >
                     <img src={helloFra} class="hello-fra" alt="hello_fra" />

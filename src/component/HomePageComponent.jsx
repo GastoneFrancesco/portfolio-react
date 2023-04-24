@@ -10,19 +10,6 @@ export const HomePageComponent = () => {
 
     let navigate = useNavigate()
 
-    const divStyle = {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        marginTop: '10vh'
-    };
-
-    const divStyle2 = {
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center'
-    };
-
     const spanColor = {
         color: 'rgb(46, 222, 160)',
     }
@@ -44,17 +31,17 @@ export const HomePageComponent = () => {
     const closedLi = '</li>';
 
     const hireMeButton = () => {
-    navigate('/work')
-  }
+        navigate('/work')
+    }
 
     return (
 
         <>
             <TopBarComponent />
 
-            <div style={divStyle}>
+            <div class="main-div-container">
 
-                <div style={divStyle2}>
+                <div className="working-fra-container">
                     <img src={working} class="working-fra" alt="working_fra" />
                     <button class="hire-me-button" onClick={hireMeButton}>
                         <FontAwesomeIcon icon={faFlag} size="2xl" style={{ color: "#1E3557", paddingRight: '1vh' }} />Hire me</button>
@@ -64,28 +51,28 @@ export const HomePageComponent = () => {
                     <img src={ideBackground} class="ide_background_img" alt="ide_background_img" />
                 </div>
 
-                <div>
-                    <div class="writer_container">
+                <div className="ide-text-container">
+                    <div>
                         <p class="writer_text_div">{openDiv}</p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text">
                             <span style={spanColor}>{openP}</span>
                             {firstMessage}
                             <span style={spanColor}>{closedP}</span>
                         </p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text2">
                             <span style={spanColor}>{openP}</span>
                             {secondMessage}
                             <span style={spanColor}>{closedP}</span>
                         </p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text_ul">{openUl}</p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text_li">
                             <span style={spanColor}>{openLi}</span>
                             <a href="https://www.linkedin.com/in/francesco-gastone-50663a20b/">Linkedin</a>
@@ -93,7 +80,7 @@ export const HomePageComponent = () => {
                             <FontAwesomeIcon icon="fa-brands fa-linkedin" size="lg" style={{ marginLeft: '2vh' }} />
                         </p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text_li">
                             <span style={spanColor}>{openLi}</span>
                             <a href="https://github.com/GastoneFrancesco">GitHub</a>
@@ -101,7 +88,7 @@ export const HomePageComponent = () => {
                             <FontAwesomeIcon icon="fa-brands fa-github" size="lg" style={{ marginLeft: '2vh' }} />
                         </p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text_li">
                             <span style={spanColor}>{openLi}</span>
                             <a href="https://www.instagram.com/_francescogastone_/">Instagram</a>
@@ -109,10 +96,10 @@ export const HomePageComponent = () => {
                             <FontAwesomeIcon icon="fa-brands fa-instagram" size="lg" style={{ marginLeft: '2vh' }} />
                         </p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text_ul">{closedUl}</p>
                     </div>
-                    <div class="writer_container">
+                    <div>
                         <p class="writer_text_div">{closedDiv}</p>
                     </div>
 

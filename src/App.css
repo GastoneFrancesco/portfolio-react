@@ -248,37 +248,6 @@ body {
     margin-bottom: -1vh !important;
   }
 
-  .resume-container div{
-    width: 45vh !important;
-    height: 20vh !important;  
-    padding-left: 1.5vh !important;
-    font-size: 1.2vh !important;
-  }
-
-  .resume-container div h1{
-    font-size: 1.6vh !important;
-    margin-bottom: 1vh !important;
-    
-  }
-  
-  .resume-container div p {
-    margin-bottom: 0.5vh !important;
-  }
-  
-  .resume-container div p:last-of-type {
-    margin-top: 0.7vh !important;
-    font-size: 1vh !important; 
-  }
-
-  .resume-container div ul {
-    padding-left: 2vh;
-  }
-  
-  .fa-resume{
-    font-size: 1.6vh !important;
-    margin-right: 1vh !important;
-  }
-
   .navMenu a{
     font-size: 1em !important;
   }
@@ -695,57 +664,79 @@ input[type="email" i] {
 }
 
 .resume-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-}
-
-.resume-container div {
-  display: flex;
-  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+  margin-top: 10vh;
   background-color: #1E1E1E;
-  color: white;
-  justify-content: center;
+  color: #fff;
+  padding: 20px;
   border-radius: 10px;
-  width: 90vh;
-  height: 40vh;
-  border-top: 1px solid rgb(46, 222, 160);
-  border-bottom: 1px solid rgb(46, 222, 160);
-  padding-left: 6vh;
-  font-size: 2vh;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.resume-container div:first-of-type {
-  border-top: none;
-  margin-top: 2vh;
+.resume-experience {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.resume-container div:last-of-type {
-  border-bottom: none;
-  margin-bottom: 10vh;
+.experience-item {
+  border-left: 1px solid rgb(46, 222, 160);
+  margin-bottom: 20px;
+  background: #272728;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.resume-container div h1 {
-  font-size: 3vh;    
-  white-space: nowrap;
-  /* keep text in one line */
-  margin-bottom: 3vh;
-  width: fit-content;
+.experience-title {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 5px 0;
 }
 
-.resume-container div p {
-  margin-bottom: 2vh;
+.experience-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px 0;
 }
 
-.resume-container div p:last-of-type {
-  margin-top: 1.5vh;
-  font-size: 1.6vh;
-  margin-bottom: 0vh;
+.experience-details {
+  margin: 0;
+  padding: 0;
 }
 
-.fa-resume{
-  font-size: 3vh;
-  margin-right: 2vh;
-  color: rgb(46, 222, 160);
+.experience-detail-item {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.resume-skills {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.skills-item {
+  display: inline-block;
+  background-color: rgb(46, 222, 160);
+  color: #1E3557;
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0 5px 5px 0;
+  font-size: 1.4vh;
+}
+
+.download-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+.download-link {
+    padding-block: 0.5vh;
+    padding-inline: 2.5vh;
+    font-size: 1.6vh;
 }

@@ -1,58 +1,83 @@
 import React from "react";
 import { TopBarComponent } from "./TopBarComponent";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFileSignature, faCalendarCheck, faBuilding, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+import curriculumPdf from '../resources/FrancescoGastoneCV.pdf';
 
 export const ResumeComponent = () => {
 
     return (
+
         <>
             <TopBarComponent />
-            <div className="main-div-container">
-                <div className="resume-container">
-                    <div>
-                        <h1><FontAwesomeIcon icon={faBriefcase} className="fa-resume"/>Junior Fullstack Web Application Developer</h1>
-                        <p><FontAwesomeIcon icon={faFileSignature} className="fa-resume"/>Contratto a tempo Indeterminato</p>
-                        <p><FontAwesomeIcon icon={faCalendarCheck} className="fa-resume"/>(Novembre 2022 – In corso)</p>
-                        <p><FontAwesomeIcon icon={faBuilding} className="fa-resume"/>Step Srl - Viale Castro Pretorio, 116, 00185 Roma RM</p>
-                        <ul>
-                            <li>Analisi Tecnico - Funzionale dei requisiti proposti dal cliente.</li>
-                            <li>Sviluppo e testing delle nuove funzionalità.</li>
-                            <li>Manutenzione (Analisi e Debug) del codice.</li>
-                        </ul>
-                        <p>Tecnologie utilizzate : Java, Hibernate/JPA , Tomcat, Oracle SQL, JSF, Eclipse, GIT.</p>
-                    </div>
-                    <div>
-                        <h1><FontAwesomeIcon icon={faBriefcase} className="fa-resume"/>Junior Fullstack Web Application Developer</h1>
-                        <p><FontAwesomeIcon icon={faFileSignature} className="fa-resume"/>Apprendistato professionalizzante</p>
-                        <p><FontAwesomeIcon icon={faCalendarCheck} className="fa-resume"/>(Agosto 2022 – Novembre 2022)</p>
-                        <p><FontAwesomeIcon icon={faBuilding} className="fa-resume"/>Step Srl - Viale Castro Pretorio, 116, 00185 Roma RM</p>
-                        <p></p>
-                    </div>
-                    <div>
-                        <h1><FontAwesomeIcon icon={faBriefcase} className="fa-resume"/>Java Developer</h1>
-                        <p><FontAwesomeIcon icon={faFileSignature} className="fa-resume"/>Stage formativo</p>
-                        <p><FontAwesomeIcon icon={faCalendarCheck} className="fa-resume"/>(Marzo 2022 – Luglio 2022)</p>
-                        <p><FontAwesomeIcon icon={faBuilding} className="fa-resume"/>Step Srl - Viale Castro Pretorio, 116, 00185 Roma RM</p>
-                        <p>Stage formativo nello sviluppo di  Web Application, con applicazione di Framework e Metodologia Agile</p>
-                    </div>
-                    <div>
-                        <h1><FontAwesomeIcon icon={faBriefcase} className="fa-resume"/>Competenze Personali</h1>
-                        <ul>
-                            <li>Java (Java SE, Java EE), C#, JavaScript</li>
-                            <li>Spring Boot, React JS, JSF, JSP</li>
-                            <li>Oracle SQL, MySQL, Google Firebase</li>
-                            <li>Versioning del codice (GIT)</li>
-                            <li>HTML, CSS</li>
-                            <li>Metodologia Agile</li>
-                            <li>Android SDK</li>
-                            <li>Servizi REST</li>
-                            <li>Windows, macOS, linux</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </>
-    )
 
-}
+            <div className="resume-container">
+
+                <div className="resume-experience">
+                    <ul>
+                        <li className="experience-item">
+                            <h3 className="experience-title">Step Srl - (Remote working)</h3>
+                            <p className="experience-subtitle">Full Stack Web Application Developer - Full time</p>
+                            <p className="experience-subtitle">November 2022 - Present</p>
+                            <p className="experience-subtitle">Skills developed during the job position:</p>
+                            <ul className="experience-details">
+                                <li className="experience-detail-item">Requirements gathering and drafting of Technical-Functional Analyses</li>
+                                <li className="experience-detail-item">Implementation of new features</li>
+                                <li className="experience-detail-item">Design, implementation, and maintenance of Oracle databases</li>
+                                <li className="experience-detail-item">Preparation of UCP (Use Case Points) estimates</li>
+                            </ul>
+                        </li>
+                        <li className="experience-item">
+                            <h3 className="experience-title">Step Srl - (Remote working)</h3>
+                            <p className="experience-subtitle">Full Stack Web Application Developer - Apprenticeship</p>
+                            <p className="experience-subtitle">August 2022 - November 2022</p>
+                            <p className="experience-subtitle">Skills developed during the job position:</p>
+                            <ul className="experience-details">
+                                <li className="experience-detail-item">Bug fixing and debugging of Java web applications</li>
+                                <li className="experience-detail-item">Maintenance of Oracle databases</li>
+                                <li className="experience-detail-item">Deployment of web applications using Apache Tomcat</li>
+                                <li className="experience-detail-item">Code management through Git versioning</li>
+                            </ul>
+                        </li>
+                        <li className="experience-item">
+                            <h3 className="experience-title">Step Srl - (Remote working)</h3>
+                            <p className="experience-subtitle">Java Developer - Stage</p>
+                            <p className="experience-subtitle">March 2022 - July 2022</p>
+                            <p className="experience-subtitle">Skills developed during the job position:</p>
+                            <ul className="experience-details">
+                                <li className="experience-detail-item">Java EE </li>
+                                <li className="experience-detail-item">SQL</li>
+                                <li className="experience-detail-item">Development of Client-Server Web Applications</li>
+                                <li className="experience-detail-item">Agile Methodology</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="resume-skills">
+                    <ul>
+                        <li className="skills-item"><b>Java SE</b></li>
+                        <li className="skills-item"><b>Java EE</b></li>
+                        <li className="skills-item"><b>Oralce SQL</b></li>
+                        <li className="skills-item"><b>Database Management</b></li>
+                        <li className="skills-item"><b>Spring Framework</b></li>
+                        <li className="skills-item"><b>RESTful Service</b></li>
+                        <li className="skills-item"><b>JPA</b></li>
+                        <li className="skills-item"><b>Hibernate</b></li>
+                        <li className="skills-item"><b>Tomcat</b></li>
+                        <li className="skills-item"><b>Anroid Development</b></li>
+                        <li className="skills-item"><b>ReactJs</b></li>
+                        <li className="skills-item"><b>Node.js</b></li>
+                        <li className="skills-item"><b>HTML, CSS</b></li>
+                        <li className="skills-item"><b>Git</b></li>
+                    </ul>
+                </div>
+                
+                <div className="download-container">
+                    <a className="download-link" href={curriculumPdf}>Download Curriculum (ENG)</a>
+                    <a className="download-link" href={curriculumPdf}>Download Curriculum (IT)</a>
+                </div>
+
+            </div>
+
+        </>
+    );
+};

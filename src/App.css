@@ -118,7 +118,7 @@ body {
   width: fit-content;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
   .working-fra {
     max-width: 12vh;
@@ -266,6 +266,14 @@ body {
   
   .navMenu a:nth-child(4):hover~.dot {
     transform: translateX(301px) !important;
+  }
+
+}
+
+@media (max-width: 800px) {
+  .resume-container {
+    flex-direction: column !important;
+    margin-inline: 4vh !important;
   }
 }
 
@@ -579,16 +587,13 @@ input[type="email" i] {
 
 .about-me-container {
   margin: auto;
-  margin-block: 12vh;
-  max-width: 100vh;
-  align-items: center;
+  margin-block: 10vh;
+  margin-inline: 4vh;
   text-align: center;
   background-color: #1E1E1E;
   color: white;
-  justify-content: center;
-  border-radius: 10px;
-  padding-block: 4vh;
-  padding-inline: 6vh;
+  padding-block: 2vh;
+  padding-inline: 4vh;
 }
 
 .about-me-p {
@@ -664,79 +669,107 @@ input[type="email" i] {
 }
 
 .resume-container {
-  width: 80%;
-  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
   margin-top: 10vh;
   background-color: #1E1E1E;
   color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  margin-inline: 10vh;
+  margin-bottom: 6vh;
 }
 
-.resume-experience {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.resume-left-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-block: 3vh;
+  margin-inline: 3vh;
 }
 
-.experience-item {
-  border-left: 1px solid rgb(46, 222, 160);
-  margin-bottom: 20px;
-  background: #272728;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+.resume-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 2vh;
+  white-space: nowrap;
 }
 
-.experience-title {
-  font-weight: bold;
-  font-size: 18px;
-  margin: 5px 0;
+.resume-profile img {
+  height: 20vh;
+  margin-bottom: 2vh;
 }
 
-.experience-subtitle {
-  font-weight: 500;
-  font-size: 14px;
-  margin: 5px 0;
+.resume-profile h2 {
+  margin-bottom: 1vh;
 }
 
-.experience-details {
-  margin: 0;
-  padding: 0;
+.resume-overview {
+  background-color: #222F42;
+  padding-inline: 2vh;
+  padding-bottom: 2vh;
 }
 
-.experience-detail-item {
-  margin-left: 20px;
-  font-weight: 500;
-  font-size: 14px;
+.resume-overview h2 {
+  white-space: nowrap;
+  margin-block: 1vh;
+  font-size: 2.2vh;
 }
 
-.resume-skills {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 20px;
-}
-
-.skills-item {
-  display: inline-block;
-  background-color: rgb(46, 222, 160);
-  color: #1E3557;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin: 0 5px 5px 0;
+.resume-overview p {
   font-size: 1.4vh;
 }
 
-.download-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2vh;
+.resume-container ul {
+  margin-left: 2.5vh;
+  font-size: 1.6vh;
 }
 
-.download-link {
-    padding-block: 0.5vh;
-    padding-inline: 2.5vh;
-    font-size: 1.6vh;
+.resume-right-container {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 2vh;
+  margin-block: 2vh;
+  font-size: 1.6vh;
+  flex: 2;
+}
+
+.resume-right-card {
+  margin-block-end: 3vh;
+}
+
+.resume-right-title {
+  background-color: #222F42;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-block-end: 1vh;
+}
+
+.resume-right-title svg {
+  background-color: #a0a0a0;
+  padding: 1vh;
+  height: 1.6vh;
+}
+
+.resume-right-title h2 {
+  padding: 0.3vh;
+  margin-inline-start: 1.6vh;
+}
+
+.resume-work-experiences div {
+  margin-bottom: 2vh;
+  margin-inline-start: 1vh;
+}
+
+.resume-work-experiences h3,
+.resume-work-experiences h4{
+  margin-bottom: 0.6vh;
+}
+
+.resume-work-experiences p {
+  margin-block-end: 0.6vh;
+}
+
+.resume-right-container a:hover {
+  color: rgb(46, 222, 160);
 }

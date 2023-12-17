@@ -109,6 +109,7 @@ body {
   font-size: 1.6vh;
   margin-top: 4vh;
   border: none;
+  cursor: pointer;
 }
 
 .ide_background_container {
@@ -201,7 +202,6 @@ body {
 
   .email-form textarea {
     font-size: 1.3vh !important;
-    border-radius: 6px;
     padding: 0.3vh 0.6vh !important;
     height: 8vh !important;
     width: 25.3vh !important;
@@ -459,9 +459,9 @@ a {
   color: white;
   width: 55vh;
   height: 62vh;
-  border-radius: 10px;
   justify-content: center;
-  border-radius: 10px;
+  border-end-end-radius: 10px;
+  border-start-end-radius: 10px;
   font-size: 14vh;
   border-right: 1.3px solid rgb(46, 222, 160);
 }
@@ -476,7 +476,8 @@ a {
   width: 90vh;
   height: 62vh;
   justify-content: center;
-  border-radius: 10px;
+  border-end-start-radius: 10px;
+  border-start-start-radius: 10px;
   border-left: 1.3px solid rgb(46, 222, 160);
 }
 
@@ -572,6 +573,11 @@ input[type="email" i] {
   color: #1E3557;
   font-weight: bold;
   font-size: 1.6vh;
+  cursor: pointer;
+}
+
+.send-mail-button input {
+  cursor: pointer;
 }
 
 .sending-email-button {
@@ -625,7 +631,6 @@ input[type="email" i] {
   background-color: #1E1E1E;
   color: white;
   justify-content: center;
-  border-radius: 10px;
   padding-inline: 6vh;
   line-height: 1.8;
   padding-block: 2vh;

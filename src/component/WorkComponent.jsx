@@ -108,7 +108,7 @@ export const WorkComponent = () => {
 
                             <div class="send-mail-button" id='send-email-div'>
                                 <FontAwesomeIcon icon={faPaperPlane} size="2xl" style={{ color: "#1E3557", paddingRight: '1vh' }} />
-                                <input type="submit" id='confirm-button' value="Send" ></input>
+                                <input type="submit" id='confirm-button' value="Send" />
                             </div>
 
                         </form>

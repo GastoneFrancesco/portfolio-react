@@ -1,6 +1,6 @@
 import React from "react";
 import { TopBarComponent } from "./TopBarComponent";
-import curriculumPic from '../resources/curriculim_pic.jpeg';
+import curriculumPic from '../resources/working_fra.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faBookOpen, faLanguage } from '@fortawesome/free-solid-svg-icons';
 
@@ -118,7 +118,7 @@ export const ResumeComponent = () => {
                         </div>
                         <ul>
                             <li><b>Italian</b> - Mothertongue</li>
-                            <li><b>Englis</b> - B2</li>
+                            <li><b>English</b> - B2</li>
                         </ul>
                     </div>
 

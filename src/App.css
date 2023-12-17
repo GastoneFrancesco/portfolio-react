@@ -20,8 +20,9 @@
   .email-container-right,
   .email-container-left,
   .hello-fra,
-  .about-me-container {
-    animation: fade_in 3s;
+  .about-me-container, 
+  .resume-container {
+    animation: fade_in 2s;
   }
 
   .writer_text_div,

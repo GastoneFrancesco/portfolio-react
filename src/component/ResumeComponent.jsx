@@ -1,6 +1,5 @@
 import React from "react";
 import { TopBarComponent } from "./TopBarComponent";
-import curriculumPdf from '../resources/FrancescoGastoneCV.pdf';
 import curriculumPic from '../resources/curriculim_pic.jpeg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faBookOpen, faLanguage } from '@fortawesome/free-solid-svg-icons';
@@ -25,7 +24,7 @@ export const ResumeComponent = () => {
                     <div className="resume-overview">
                         <div>
                             <h2>OVERVIEW</h2>
-                            <p>Passionate Software Engineer with a focus on Web Applications As a software engineer, my passion lies in the realm of software development and IT. However, my particular area of interest is web applications.</p>
+                            <p>Passionate Software Engineer with a focus on Web Applications. As a software engineer, my passion lies in the realm of software development and IT. However, my particular area of interest is web applications.</p>
                         </div>
                         <div>
                             <h2>SOFTWARE AND TOOLS</h2>
@@ -48,8 +47,6 @@ export const ResumeComponent = () => {
                         </div>
                         <div>
                             <h2>CONTACT INFORMATION</h2>
-                            <p><b>Address:</b> Via Dante Alighieri, 7 825025, Melfi</p>
-                            <p><b>Mobile</b>: +39 3450535148</p>
                             <p><b>Email</b>: francesco.gastone.dev@gmail.com</p>
                             <p><b>LinkedIn</b>: <a href="https://www.linkedin.com/in/francesco-gastone-50663a20b/" className="underline">francesco-gastone-50663a20b</a></p>
                         </div>
@@ -124,8 +121,6 @@ export const ResumeComponent = () => {
                             <li><b>Englis</b> - B2</li>
                         </ul>
                     </div>
-
-                    <a href={curriculumPdf}>Click here to download</a>
 
                 </div>
 

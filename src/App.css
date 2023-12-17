@@ -271,10 +271,16 @@ body {
 }
 
 @media (max-width: 800px) {
+
   .resume-container {
     flex-direction: column !important;
     margin-inline: 4vh !important;
   }
+
+  .about-me-container {
+    margin-inline: 2vh !important;
+  }
+  
 }
 
 .ide_background_img {
@@ -588,7 +594,7 @@ input[type="email" i] {
 .about-me-container {
   margin: auto;
   margin-block: 10vh;
-  margin-inline: 4vh;
+  margin-inline: 10vh;
   text-align: center;
   background-color: #1E1E1E;
   color: white;

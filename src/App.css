@@ -270,7 +270,7 @@ body {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
   .resume-container {
     flex-direction: column !important;
@@ -280,7 +280,7 @@ body {
   .about-me-container {
     margin-inline: 2vh !important;
   }
-  
+
 }
 
 .ide_background_img {

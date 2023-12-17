@@ -81,8 +81,7 @@
 
 body {
   background: rgb(39, 39, 39);
-  background: linear-gradient(140deg, rgba(39, 39, 39, 1) 9%, rgba(22, 66, 132, 1) 71%, #003d99 100%);
-  background-repeat: no-repeat;
+  background-repeat: initial;
   background-attachment: fixed;
   font-family: "Montserrat", sans-serif;
 }
